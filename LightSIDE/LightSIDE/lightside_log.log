@@ -1,0 +1,621 @@
+Fri 02/07/2020  7:41:00.48
+Feb 07, 2020 7:41:02 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 07, 2020 7:41:02 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+Mon 02/10/2020 10:24:59.95
+Feb 10, 2020 10:25:08 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 10, 2020 10:25:08 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	java.util.concurrent.FutureTask.report(Unknown Source)
+	java.util.concurrent.FutureTask.get(Unknown Source)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	javax.swing.SwingWorker$1.call(Unknown Source)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	javax.swing.SwingWorker.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	at edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at edu.cmu.side.model.feature.FeatureHit.setValue(FeatureHit.java:76)
+	at edu.cmu.side.model.feature.FeatureHit.<init>(FeatureHit.java:49)
+	at edu.cmu.side.model.feature.LocalFeatureHit.<init>(LocalFeatureHit.java:62)
+	at plugins.features.BasicFeatures.aggregateNGrams(BasicFeatures.java:430)
+	at plugins.features.BasicFeatures.extractFeaturesOnce(BasicFeatures.java:270)
+	at plugins.features.BasicFeatures.extractFeatureHitsFromDocument(BasicFeatures.java:608)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:98)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:59)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+Feature Extraction Failed
+java.lang.RuntimeException: Feature Extraction Failed: java.lang.NullPointerException
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:135)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	javax.swing.SwingWorker$1.call(Unknown Source)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	javax.swing.SwingWorker.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:135)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	at edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	... 10 more
+Caused by: java.lang.NullPointerException
+	at edu.cmu.side.model.feature.FeatureHit.setValue(FeatureHit.java:76)
+	at edu.cmu.side.model.feature.FeatureHit.<init>(FeatureHit.java:49)
+	at edu.cmu.side.model.feature.LocalFeatureHit.<init>(LocalFeatureHit.java:62)
+	at plugins.features.BasicFeatures.aggregateNGrams(BasicFeatures.java:430)
+	at plugins.features.BasicFeatures.extractFeaturesOnce(BasicFeatures.java:270)
+	at plugins.features.BasicFeatures.extractFeatureHitsFromDocument(BasicFeatures.java:608)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:98)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:59)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+Feb 10, 2020 10:35:53 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:36:03 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:36:19 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:36:55 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:37:44 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:38:09 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 10, 2020 10:38:23 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 10, 2020 10:38:38 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 10, 2020 10:38:43 AM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches logit__pairs_1.model.side
+Feb 10, 2020 10:38:43 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'logit__pairs_1.model.side' matches current settings - using it instead of training again.
+Zero Weights processed. Default weights will be used
+Feb 10, 2020 10:38:54 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 10, 2020 10:39:06 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 10, 2020 10:39:18 AM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Sun 02/23/2020 14:27:18.81
+Feb 23, 2020 2:27:23 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 23, 2020 2:27:23 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 23, 2020 3:29:52 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 3:30:13 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 3:31:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams.model.side
+Feb 23, 2020 3:31:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 3:31:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 3:32:42 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams.model.side
+Feb 23, 2020 3:32:42 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 3:32:59 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 3:33:11 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams.model.side
+Feb 23, 2020 3:33:11 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams.model.side' matches current settings - using it instead of training again.
+Evaluating 1971 features for influence.
+getLearner() took 0.0 seconds
+learner.predict took 0.833 seconds
+Evaluating instances for neg
+Evaluating instances for pos
+Feb 23, 2020 3:42:50 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:42:50 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.263 seconds
+Feb 23, 2020 3:44:41 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:44:41 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.378 seconds
+Feb 23, 2020 3:44:56 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:44:56 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.278 seconds
+Feb 23, 2020 3:45:26 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:45:26 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.364 seconds
+Feb 23, 2020 3:45:29 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:45:29 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.316 seconds
+Feb 23, 2020 3:45:42 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.0940057530829024
+Feb 23, 2020 3:45:42 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.011046484408471608
+getLearner() took 0.0 seconds
+learner.predict took 0.275 seconds
+Feb 23, 2020 4:07:41 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:07:53 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_2.model.side
+Feb 23, 2020 4:07:53 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_2.model.side' matches current settings - using it instead of training again.
+saving bayes__1grams_2 (TRAINED_MODEL)
+REx: making new chooser 
+REx: returning chooser for filter [LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml]]
+[LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml], javax.swing.plaf.basic.BasicFileChooserUI$AcceptAllFileFilter@2e597467]
+REx: chooser has [LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml], javax.swing.plaf.basic.BasicFileChooserUI$AcceptAllFileFilter@2e597467]
+REx: getting trained model...
+REx: setting default name 'bayes__1grams_2.model.xml' from selected filter...
+REx: selected file is 'bayes__1grams_2.model.xml'
+REx: showing dialogue...
+Feb 23, 2020 4:08:26 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:08:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_2.model.side
+Feb 23, 2020 4:08:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_2.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:08:59 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:09:08 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_3.model.side
+Feb 23, 2020 4:09:08 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_3.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:09:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:09:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_4.model.side
+Feb 23, 2020 4:09:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_4.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:09:56 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams.model.side
+Feb 23, 2020 4:09:56 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:10:03 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams.model.side
+Feb 23, 2020 4:10:03 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:51:40 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:51:55 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__123POSgrams.model.side
+Feb 23, 2020 4:51:55 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__123POSgrams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:52:35 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:53:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:53:49 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:54:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:54:39 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:55:03 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__123grams.model.side
+Feb 23, 2020 4:55:03 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__123grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:56:11 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:56:35 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:56:56 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:57:14 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Feb 23, 2020 4:57:14 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 4:57:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:57:54 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 4:59:16 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+java.lang.OutOfMemoryError: Java heap space
+	java.awt.image.DataBufferInt.<init>(Unknown Source)
+	java.awt.image.Raster.createPackedRaster(Unknown Source)
+	java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	java.awt.image.BufferedImage.<init>(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$SkinPainter.createImage(Unknown Source)
+	sun.swing.CachedPainter.paint0(Unknown Source)
+	sun.swing.CachedPainter.paint(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkinRaw(Unknown Source)
+	com.sun.java.swing.plaf.windows.AnimationController.paintSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintRotatedSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintContentBorder(Unknown Source)
+	javax.swing.plaf.basic.BasicTabbedPaneUI.paint(Unknown Source)
+	javax.swing.plaf.ComponentUI.update(Unknown Source)
+	javax.swing.JComponent.paintComponent(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JLayeredPane.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	javax.swing.RepaintManager.paint(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	java.awt.Container.paint(Unknown Source)
+	java.awt.Window.paint(Unknown Source)
+
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at java.awt.image.BufferedImage.<init>(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$SkinPainter.createImage(Unknown Source)
+	at sun.swing.CachedPainter.paint0(Unknown Source)
+	at sun.swing.CachedPainter.paint(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkinRaw(Unknown Source)
+	at com.sun.java.swing.plaf.windows.AnimationController.paintSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintRotatedSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintContentBorder(Unknown Source)
+	at javax.swing.plaf.basic.BasicTabbedPaneUI.paint(Unknown Source)
+	at javax.swing.plaf.ComponentUI.update(Unknown Source)
+	at javax.swing.JComponent.paintComponent(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JLayeredPane.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at java.awt.Window.paint(Unknown Source)
+java.lang.OutOfMemoryError: Java heap space
+	java.awt.image.DataBufferInt.<init>(Unknown Source)
+	java.awt.image.Raster.createPackedRaster(Unknown Source)
+	java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	java.awt.image.BufferedImage.<init>(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$SkinPainter.createImage(Unknown Source)
+	sun.swing.CachedPainter.paint0(Unknown Source)
+	sun.swing.CachedPainter.paint(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkinRaw(Unknown Source)
+	com.sun.java.swing.plaf.windows.AnimationController.paintSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintRotatedSkin(Unknown Source)
+	com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintContentBorder(Unknown Source)
+	javax.swing.plaf.basic.BasicTabbedPaneUI.paint(Unknown Source)
+	javax.swing.plaf.ComponentUI.update(Unknown Source)
+	javax.swing.JComponent.paintComponent(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	javax.swing.JLayeredPane.paint(Unknown Source)
+	javax.swing.JComponent.paintChildren(Unknown Source)
+	javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	javax.swing.RepaintManager.paint(Unknown Source)
+	javax.swing.JComponent.paint(Unknown Source)
+	java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	java.awt.Container.paint(Unknown Source)
+	java.awt.Window.paint(Unknown Source)
+
+	at java.awt.image.DataBufferInt.<init>(Unknown Source)
+	at java.awt.image.Raster.createPackedRaster(Unknown Source)
+	at java.awt.image.DirectColorModel.createCompatibleWritableRaster(Unknown Source)
+	at java.awt.image.BufferedImage.<init>(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$SkinPainter.createImage(Unknown Source)
+	at sun.swing.CachedPainter.paint0(Unknown Source)
+	at sun.swing.CachedPainter.paint(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkinRaw(Unknown Source)
+	at com.sun.java.swing.plaf.windows.AnimationController.paintSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.XPStyle$Skin.paintSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintRotatedSkin(Unknown Source)
+	at com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI.paintContentBorder(Unknown Source)
+	at javax.swing.plaf.basic.BasicTabbedPaneUI.paint(Unknown Source)
+	at javax.swing.plaf.ComponentUI.update(Unknown Source)
+	at javax.swing.JComponent.paintComponent(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at javax.swing.JLayeredPane.paint(Unknown Source)
+	at javax.swing.JComponent.paintChildren(Unknown Source)
+	at javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	at javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at javax.swing.RepaintManager.paint(Unknown Source)
+	at javax.swing.JComponent.paint(Unknown Source)
+	at java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+	at sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+	at java.awt.Container.paint(Unknown Source)
+	at java.awt.Window.paint(Unknown Source)
+Sun 02/23/2020 17:02:01.31
+Feb 23, 2020 5:02:04 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 23, 2020 5:02:04 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 23, 2020 5:05:25 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:05:47 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:06:18 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:06:40 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:07:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:07:32 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:09:59 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:11:38 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+saving bayes__1grams (TRAINED_MODEL)
+REx: making new chooser 
+REx: returning chooser for filter [LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml]]
+[LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml], javax.swing.plaf.basic.BasicFileChooserUI$AcceptAllFileFilter@2373eca1]
+REx: chooser has [LightSide Trained Model XML: [model.xml], Predict-Only XML: [predict.xml], javax.swing.plaf.basic.BasicFileChooserUI$AcceptAllFileFilter@2373eca1]
+REx: getting trained model...
+REx: setting default name 'bayes__1grams.model.xml' from selected filter...
+REx: selected file is 'bayes__1grams.model.xml'
+REx: showing dialogue...
+Feb 23, 2020 5:13:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__123grams.model.side
+Feb 23, 2020 5:13:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__123grams.model.side' matches current settings - using it instead of training again.
+Feb 23, 2020 5:14:49 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 23, 2020 5:17:37 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+UNEXPECTED STOP!Exception in thread "AWT-EventQueue-1" 
+Exception in thread "TimerQueue" java.lang.OutOfMemoryError: Java heap space
+
+java.lang.OutOfMemoryError: Java heap space
+
+java.lang.OutOfMemoryError: Java heap space
+
+Feb 23, 2020 10:06:15 PM edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask requestCancel
+WARNING: stopping extraction...
+Mon 02/24/2020 19:11:52.12
+Feb 24, 2020 7:11:55 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 24, 2020 7:11:55 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 24, 2020 7:13:01 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:15:44 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:19:54 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:20:15 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:20:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:21:09 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:21:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:22:04 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:22:25 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:23:14 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:24:18 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:26:28 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:26:49 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:27:39 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:32:16 PM edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask requestCancel
+WARNING: stopping extraction...
+Mon 02/24/2020 19:32:32.74
+Feb 24, 2020 7:32:35 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Feb 24, 2020 7:32:35 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 24, 2020 7:33:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	java.util.concurrent.FutureTask.report(Unknown Source)
+	java.util.concurrent.FutureTask.get(Unknown Source)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	javax.swing.SwingWorker$1.call(Unknown Source)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	javax.swing.SwingWorker.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	at edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at edu.cmu.side.model.feature.FeatureHit.setValue(FeatureHit.java:76)
+	at edu.cmu.side.model.feature.FeatureHit.<init>(FeatureHit.java:49)
+	at edu.cmu.side.model.feature.LocalFeatureHit.<init>(LocalFeatureHit.java:62)
+	at plugins.features.BasicFeatures.aggregateNGrams(BasicFeatures.java:430)
+	at plugins.features.BasicFeatures.extractFeaturesOnce(BasicFeatures.java:241)
+	at plugins.features.BasicFeatures.extractFeatureHitsFromDocument(BasicFeatures.java:608)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:98)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:59)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+Feature Extraction Failed
+java.lang.RuntimeException: Feature Extraction Failed: java.lang.NullPointerException
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:135)
+	edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	javax.swing.SwingWorker$1.call(Unknown Source)
+	java.util.concurrent.FutureTask.run(Unknown Source)
+	javax.swing.SwingWorker.run(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	java.lang.Thread.run(Unknown Source)
+
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:135)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHits(ParallelFeaturePlugin.java:34)
+	at edu.cmu.side.control.ExtractFeaturesControl$BuildTableTask.doTask(ExtractFeaturesControl.java:326)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:70)
+	at edu.cmu.side.view.generic.ActionBarTask.doInBackground(ActionBarTask.java:18)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin.extractFeatureHitsForSubclass(ParallelFeaturePlugin.java:126)
+	... 10 more
+Caused by: java.lang.NullPointerException
+	at edu.cmu.side.model.feature.FeatureHit.setValue(FeatureHit.java:76)
+	at edu.cmu.side.model.feature.FeatureHit.<init>(FeatureHit.java:49)
+	at edu.cmu.side.model.feature.LocalFeatureHit.<init>(LocalFeatureHit.java:62)
+	at plugins.features.BasicFeatures.aggregateNGrams(BasicFeatures.java:430)
+	at plugins.features.BasicFeatures.extractFeaturesOnce(BasicFeatures.java:241)
+	at plugins.features.BasicFeatures.extractFeatureHitsFromDocument(BasicFeatures.java:608)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:98)
+	at edu.cmu.side.plugin.ParallelFeaturePlugin$1.call(ParallelFeaturePlugin.java:59)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+Feb 24, 2020 7:36:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:36:45 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:37:12 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:37:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:41:10 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 24, 2020 7:41:18 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 24, 2020 7:41:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches logit__123grams_pairs_1.model.side
+Feb 24, 2020 7:41:24 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'logit__123grams_pairs_1.model.side' matches current settings - using it instead of training again.
+Zero Weights processed. Default weights will be used
+Feb 24, 2020 7:41:36 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Zero Weights processed. Default weights will be used
+Feb 24, 2020 7:41:48 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:41:57 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:42:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:42:14 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:42:31 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:43:34 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Feb 24, 2020 7:43:47 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches weka__123grams_pairs.model.side
+Feb 24, 2020 7:43:47 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'weka__123grams_pairs.model.side' matches current settings - using it instead of training again.
+Feb 24, 2020 7:44:05 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
