@@ -619,3 +619,120 @@ Feb 24, 2020 7:43:47 PM edu.cmu.side.control.BuildModelControl$BuildModelTask do
 INFO: Cached model 'weka__123grams_pairs.model.side' matches current settings - using it instead of training again.
 Feb 24, 2020 7:44:05 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
 INFO: Training new model.
+Wed 03/25/2020 19:16:53.38
+Mar 25, 2020 7:16:54 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Mar 25, 2020 7:16:55 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 25, 2020 7:17:43 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 7:17:59 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 7:18:13 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Wed 03/25/2020 20:50:46.16
+Mar 25, 2020 8:50:47 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Mar 25, 2020 8:50:47 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+Mar 25, 2020 8:54:56 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 8:54:56 PM edu.cmu.side.plugin.LearningPlugin train
+INFO: Skipping evaluation -- validationSettings['test'] != 'true'
+Mar 25, 2020 8:57:55 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1393939393939394
+Mar 25, 2020 8:57:55 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.03872785760137539
+getLearner() took 0.0 seconds
+learner.predict took 0.005 seconds
+Mar 25, 2020 8:58:27 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 8:58:27 PM edu.cmu.side.plugin.LearningPlugin train
+INFO: Skipping evaluation -- validationSettings['test'] != 'true'
+Mar 25, 2020 8:59:11 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 8:59:11 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 8:59:23 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 8:59:23 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 8:59:31 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 8:59:31 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.001 seconds
+Mar 25, 2020 9:00:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 9:00:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 9:00:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 9:00:07 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 9:00:08 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 9:00:08 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 9:00:09 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Mean: 0.1111111111111111
+Mar 25, 2020 9:00:09 PM edu.cmu.side.recipe.Predictor calculatePredictionStats
+INFO: Feature Density Deviation: 0.0
+getLearner() took 0.0 seconds
+learner.predict took 0.002 seconds
+Mar 25, 2020 9:01:04 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 9:01:04 PM edu.cmu.side.plugin.LearningPlugin train
+INFO: Skipping evaluation -- validationSettings['test'] != 'true'
+Mar 25, 2020 9:01:04 PM plugins.wrappers.FeatureSelection learnFromTrainingData
+INFO: FS 205: selected 1 features from table 1grams, fold 1
+Mar 25, 2020 9:01:05 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:05 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:06 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:07 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:08 PM edu.cmu.side.control.BuildModelControl$BuildModelTask checkForCachedModel
+INFO: Cached model matches bayes__1grams_1.model.side
+Mar 25, 2020 9:01:08 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Cached model 'bayes__1grams_1.model.side' matches current settings - using it instead of training again.
+Mar 25, 2020 9:01:15 PM edu.cmu.side.control.BuildModelControl$BuildModelTask doTask
+INFO: Training new model.
+Mar 25, 2020 9:01:15 PM edu.cmu.side.plugin.LearningPlugin train
+INFO: Skipping evaluation -- validationSettings['test'] != 'true'
